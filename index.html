@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -243,12 +248,13 @@
       />
     </section>
 
-    <section id="projects">
+    <!-- <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
+      <div class="experience-details-container swiper">
+        <div class="project-wrapper">
+        <div class="about-containers swiper-wrapper">
+          <div class="details-container color-container swiper-slide">
             <div class="article-container">
               <img
                 src="./assets/proj-1.png"
@@ -272,9 +278,9 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container swiper-slide">
             <div class="article-container">
-              <img
+              <img 
                 src="./assets/proj-2.png"
                 alt="Project 2"
                 class="project-img"
@@ -296,7 +302,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container swiper-slide">
             <div class="article-container">
               <img
                 src="./assets/proj-3.png"
@@ -320,14 +326,239 @@
               </button>
             </div>
           </div>
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img
+                src="./assets/proj-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Expenses Chart</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/DianaSagoyan/expenses-chart-component-main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://expenses-chart-component-main-ivory.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img
+                src="./assets/proj-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Autumn Animation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/DianaSagoyan/Autumn-Animation'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://autumn-animation.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img 
+                src="./assets/proj-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fylo Landing page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/DianaSagoyan/fylo-frontend-mentor-challenge'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://fylo-frontend-mentor-challenge-plum.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+        </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icom"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
+    </section> -->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img
+                src="./assets/proj-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Expenses Chart</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/DianaSagoyan/expenses-chart-component-main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://expenses-chart-component-main-ivory.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="card-item swiper-slide">
+            <img 
+            src="./assets/proj-2.png"
+            alt="Project 2"
+            class="project-img"
+          />
+          <h2 class="experience-sub-title project-title">Autumn Animation</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/DianaSagoyan/Autumn-Animation'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://autumn-animation.vercel.app/'"
+            >
+              Live Demo
+            </button>
+            </div>
+          </div>
+          <div class="card-item swiper-slide">
+            <img
+                src="./assets/proj-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Fylo Landing page</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://github.com/DianaSagoyan/fylo-frontend-mentor-challenge'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href = 'https://fylo-frontend-mentor-challenge-plum.vercel.app/'"
+                >
+                  Live Demo
+                </button>
+          </div>
+        </div>
+        <div class="card-item swiper-slide">
+          <img
+            src="./assets/proj-1.png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <h2 class="experience-sub-title project-title">Expenses Chart</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href = 'https://github.com/DianaSagoyan/expenses-chart-component-main'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href = 'https://expenses-chart-component-main-ivory.vercel.app/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="card-item swiper-slide">
+        <img 
+        src="./assets/proj-2.png"
+        alt="Project 2"
+        class="project-img"
+      />
+      <h2 class="experience-sub-title project-title">Autumn Animation</h2>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href = 'https://github.com/DianaSagoyan/Autumn-Animation'"
+        >
+          Github
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href = 'https://autumn-animation.vercel.app/'"
+        >
+          Live Demo
+        </button>
+        </div>
+      </div>
+      <div class="card-item swiper-slide">
+        <img
+            src="./assets/proj-3.png"
+            alt="Project 3"
+            class="project-img"
+          />
+          <h2 class="experience-sub-title project-title">Fylo Landing page</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://github.com/DianaSagoyan/fylo-frontend-mentor-challenge'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href = 'https://fylo-frontend-mentor-challenge-plum.vercel.app/'"
+            >
+              Live Demo
+            </button>
+      </div>
+    </div>
+      
+        </div>
+        <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-slide-button swiper-button-prev"></div>
+  <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
     </section>
 
     <section id="contact">
@@ -373,6 +604,7 @@
         </div>
       </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

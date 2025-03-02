@@ -348,7 +348,7 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
+  width: 100%;
   height: 35vh;
 }
 
@@ -360,6 +360,37 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.card-list .card-item {
+  border-radius: 8px;
+  user-select: none;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: gray;
+  height: 15px;
+  width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
 }
 
 /* Contact */
