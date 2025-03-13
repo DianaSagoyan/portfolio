@@ -364,7 +364,7 @@ article .icon {
 
 .slider-wrapper {
   overflow: hidden;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .card-list .card-item {
