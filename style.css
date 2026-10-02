@@ -337,7 +337,13 @@ article .icon {
 
 /* Projects section */
 #projects {
+  padding-bottom: 2rem;
   position: relative;
+  --img-h: 260px;
+}
+
+#projects .title{
+  padding-bottom: 1.5rem;
 }
 
 .color-container {
@@ -348,12 +354,27 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 100%;
-  height: 35vh;
+  height: var(--img-h);
+  object-fit: cover; /*fixes stretching*/
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1.25rem 0 0.5rem;
   color: black;
+}
+
+.project-tech{
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: rgb(120, 120, 120);
+}
+
+.project-desc{
+  margin-bottom: 1.5rem;
+}
+
+.btn-container{
+  margin-top: auto; /*Pushes bottom to the bottom of the card*/
 }
 
 .project-btn {
@@ -361,30 +382,33 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-.slider-wrapper {
-  overflow: hidden;
-  /* max-width: 1200px; */
-}
-
 .card-list .card-item {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   user-select: none;
-  height: 70vh;
+  /* height: 70vh; */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0 1rem 1.5rem;
+  height: auto;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  margin: 0 3rem 3rem;
 }
 
 .slider-wrapper .swiper-pagination-bullet {
   background: gray;
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
 }
 
 .slider-wrapper .swiper-slide-button {
-  color: #fff;
+  color: rgb(80,80,80);
+  top: calc(var(--img-h) / 2);
   transition: 0.2s ease;
 }
 
